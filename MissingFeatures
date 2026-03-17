@@ -1,0 +1,5 @@
+1. Fix the font color of navigation whenever the background color was conflicting
+2. Create an animation for each button
+    a. A transition from dark background to barleywhite
+    b. ease in from left to right
+3. 

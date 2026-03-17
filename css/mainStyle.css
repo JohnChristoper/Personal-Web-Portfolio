@@ -1,0 +1,251 @@
+:root {
+    --barleywhite: #FFF2CC;
+    --rangoongreen: #161616;
+    --boulder: #7A7A7A;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--rangoongreen);
+    background-image: url('../Assets/Images/grain-texture.png');
+    background-size: 100%;
+    background-position: top;
+    background-repeat: repeat;
+}
+
+@font-face {
+    font-family: 'Instrument Sans';
+    src: url('../Assets/Fonts/instrument-sans-font-family/InstrumentSans-Regular-BF645daa1019d9e.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Boston Angel', 'sans-serif';
+    src: url('Assets/Fonts/Boston Angel Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pristina';
+    src: url('Assets/Fonts/Pristina Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+
+    width: 100%;
+    height: 12vh;
+    min-height: 10px;
+    margin: 0px 0px 0px 0px;
+
+    background-color: rgb(var(--rangoongreen), 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px 0% 0% 2%;
+}
+
+nav {
+    display: inline-flex;
+    align-self: center;
+    justify-content: space-evenly;
+
+    width: 33vw;
+    margin: 0% 2% 0% 0%;
+}
+
+nav > a {
+    margin: 0% 1% 0% 1%;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--barleywhite);
+}
+
+/*===================  FOOTER  ======================*/
+footer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 180px;
+    background-color: var(--barleywhite);
+    background-image: url(../Assets/Images/grain-texture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.copyright-ratio {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 49%;
+    height: 100%;
+    padding: 0% 0% 0% 3%;
+}
+
+.copyright-ratio > p:first-child {
+    margin: 4% 0% 0% 0%;
+    font-size: x-large;
+    font-family: 'Boston Angel', sans-serif;
+}
+
+.copyright-ratio > p:nth-child(2) {
+    margin: 0;
+    font-size: small;
+    font-family: 'Pristina', sans-serif;
+}
+
+.copyright-ratio > p:last-child {
+    margin-top: 70px;
+    font-size: small;
+}
+
+
+.foot-nav-ratio {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 100%;
+    margin: 2% 0% 0% 0%;
+}
+
+.foot-nav-ratio > a {
+    margin: 3% 0% 0% 0%;
+    font-size: small;
+    text-decoration: none;
+    color: var(--rangoongreen);
+}
+
+.socials-ratio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    width: 32%;
+}
+
+.socials-ratio > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.socials-ratio > div > img {
+    width: 5%;
+    height: auto;
+    margin: 0% 3% 0% 0%;
+}
+
+.socials-ratio > div > p {
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin: 0%;
+}
+
+.socials-ratio > img {
+    width: 4vw;
+    margin: 0% 4% 0% 0%;
+    align-self: flex-end;
+}
+
+@media (max-width: 769px) {
+    nav > a {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 140px;
+    }
+
+    .copyright-ratio > p:first-child {
+        font-size: medium;
+    }
+
+    .copyright-ratio > p:nth-child(2) {
+        font-size: smaller;
+    }
+
+    .copyright-ratio > p:last-child {
+        margin-top: 60px;
+        font-size: x-small;
+    }
+    .foot-nav-ratio > a {
+        font-size: x-small;
+    }
+
+    .socials-ratio > div {
+        margin-left: 0%;
+    }
+
+    .socials-ratio > div > img {
+        width: 7%;
+        height: auto;
+    }
+
+    .socials-ratio > div > p {
+        font-size: 9px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 426px) {
+    nav {
+        display: none;
+    }
+
+    .logo {
+        width: auto;
+        height: 35px;
+    }
+
+    footer {
+        height: 100px;
+    }
+
+    .copyright-ratio {
+        width: 75%;
+    }
+
+    .copyright-ratio > p{
+        font-size: 12px;
+    }
+
+    .copyright-ratio > p:last-child {
+        margin-top: 20px;
+    }
+
+    .foot-nav-ratio {
+        display: none;
+    }
+
+    .socials-ratio {
+        width: 25%;
+    }
+
+    .socials-ratio > img {
+        display: none;
+    }
+
+    .socials-ratio > div > img {
+        width: 16px;
+        margin-left: 45px;
+        margin-top: 5px;
+    }
+
+    .socials-ratio > div > p {
+        display: none;
+    }
+}
