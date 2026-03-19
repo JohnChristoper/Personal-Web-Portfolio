@@ -45,8 +45,7 @@ main {
 .about {
     display: flex;
     flex-direction: column;
-    height: 1000px;
-
+    height: auto;
 }
 
 .about > img:first-child {
@@ -74,7 +73,8 @@ hr {
     align-self: center;
     border-top-right-radius: 120px;
     width: 92%;
-    height: 115vh;
+    height: 1153h;
+    margin-bottom: 9vh;
     background-color: var(--barleywhite);
 }
 
@@ -90,6 +90,63 @@ hr {
     margin: 4vh 0px 0px 2vw;
     font-size: clamp(14px, 4vw, 45px);
     font-family: 'Boston Angel';
+}
+
+.learn-ratio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 4vh;
+    margin-left: 6vw;
+    width: 240px;
+    height: 60px;
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: var(--cta);
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.learn-ratio p {
+    width: fit-content;
+    margin: 0px 0vw 0px 3vw;
+    font-size: 22px;
+    color: var(--cta);
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    border-radius: 3rem;
+    width: 60px;
+    height: 60px;
+    background-color: #FF4D4D;
+}
+
+.arrow > span {
+    position: absolute;
+    left: 34%;
+    height: 3px;
+    width: 17px;
+    border-radius: 2px;
+    background-color: white;
+    transform-origin: right center;
+}
+
+.arrow span:first-child{
+    top: 48%;
+    transform: rotate(45deg);
+}
+
+.arrow span:last-child{
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+.about img:last-child {
+    align-self: center;
+    width: 20vw;
 }
 
 @media (max-wdith: 769px) {
