@@ -1,3 +1,103 @@
+:root {
+    --barleywhite: #FFF2CC;
+    --rangoongreen: #161616;
+    --boulder: #7A7A7A;
+    --cta: #FF4D4D;
+}
+
 main {
+    padding-top: 12vh;  
+    height: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88vh;
+}
+
+.hero p {
+    position: relative;
+    width: fit-content;
+    font-size: 23px;
+    font-family: 'Pristina';
+    color: var(--barleywhite);
+}
+
+.hero p:first-child{
+    top: 23%;
+    left: 30%;
+}
+
+.hero p:last-child{
+    top: 2%;
+    left: 42%;
+}
+
+.hero img {
+    position: relative;
+    top: 12%;
+    left: 21%;
+    width: 60%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
     height: 1000px;
+
+}
+
+.about > img:first-child {
+    align-self: center;
+    width: 20vw;
+}
+
+hr {
+    margin: 0;
+    align-self: center;
+    width: 92%;
+    border-color: var(--barleywhite);
+}
+
+.about > img:nth-child(3) {
+    margin-top: 1%;
+    margin-right: 5%;
+    align-self: flex-end;
+    width: 3vw;
+}
+
+.about-ratio {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-top-right-radius: 120px;
+    width: 92%;
+    height: 115vh;
+    background-color: var(--barleywhite);
+}
+
+.about-ratio > img:first-child{
+    width: 3vw;
+    height: 3vh;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+
+.introduction {
+    white-space: pre-line;
+    margin: 4vh 0px 0px 2vw;
+    font-size: clamp(14px, 4vw, 45px);
+    font-family: 'Boston Angel';
+}
+
+@media (max-wdith: 769px) {
+
+}
+
+@media (max-wdith: 426px) {
+    main {
+        padding-top: 60px;
+    }
 }
