@@ -2,7 +2,7 @@
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
     --boulder: #7A7A7A;
-    --cta: #FF4D4D;
+    --cta: #f21202;
 }
 
 main {
@@ -20,19 +20,20 @@ main {
 .hero p {
     position: relative;
     width: fit-content;
-    font-size: 23px;
     font-family: 'Pristina';
     color: var(--barleywhite);
 }
 
 .hero p:first-child{
-    top: 23%;
+    top: 22%;
     left: 30%;
+    font-size: 4vh;
 }
 
 .hero p:last-child{
     top: 2%;
     left: 42%;
+    font-size: 4vh;
 }
 
 .hero img {
@@ -93,68 +94,78 @@ hr {
 }
 
 .learn-ratio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin-top: 4vh;
-    margin-left: 6vw;
-    width: 240px;
-    height: 60px;
-    border-radius: 3rem;
-    border-style: solid;
-    border-color: var(--cta);
-    background-color: rgb(0, 0, 0, 0);
-}
-
-.learn-ratio p {
-    width: fit-content;
-    margin: 0px 0vw 0px 3vw;
-    font-size: 22px;
-    color: var(--cta);
-}
-
-.arrow {
-    display: inline-block;
     position: relative;
-    border-radius: 3rem;
-    width: 60px;
-    height: 60px;
-    background-color: #FF4D4D;
+    width: 17vw;
+    height: 9vh;
+    margin-left: 5vw;
+    padding: 0;
+    border: none;
+    background: none;
 }
 
-.arrow > span {
+.learn-btn-background {
     position: absolute;
-    left: 34%;
-    height: 3px;
-    width: 17px;
-    border-radius: 2px;
-    background-color: white;
-    transform-origin: right center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.arrow span:first-child{
-    top: 48%;
-    transform: rotate(45deg);
+
+.learn-btn-arrow-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    overflow: hidden;
+    z-index: 2;
+
+    transition: width 0.4s ease;
 }
 
-.arrow span:last-child{
-    top: 45%;
-    transform: rotate(-45deg);
+.learn-btn-arrow {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: auto;     
 }
 
-.about img:last-child {
+.learn-ratio:hover .learn-btn-arrow-mask {
+    width: 100%;
+}
+
+.learn-ratio p:last-child  {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 20%;
+    left: 22%;
+    margin: 0;
+    font-size: 22px;
+    color: white;
+    font-family: 'Boston Angel', sans-serif;
+}
+
+.learn-ratio:hover p:last-child {
+    display: inline;
+}
+
+.about > div > img:last-child {
     align-self: center;
     width: 20vw;
 }
 
-@media (max-wdith: 769px) {
+@media (max-width: 1024px) {
 
 }
 
-@media (max-wdith: 426px) {
-    main {
-        padding-top: 60px;
+@media (max-width: 768px) {
+    .hero p:last-child {
+        font-size: ;
     }
 }
