@@ -1,8 +1,160 @@
+:root {
+    --barleywhite: #FFF2CC;
+    --rangoongreen: #161616;
+    --boulder: #7A7A7A;
+    --cta: #f21202;
+}
+
 main {
     display: flex;
     flex-direction: column;
     position: relative;
 
+    padding-top: 12vh;
     width: 100%;
     height: 4000px;
+}
+
+.name {
+    margin: 3% 0% 0% 3%;
+    font-size: 4rem;
+    font-family: 'Boston Angel', sans-serif;
+    color: var(--barleywhite);
+}
+
+.opening {
+    margin: 0% 3% 3% 3%;
+    font-size: 1rem;
+    color: var(--barleywhite);
+}
+
+.info-cont {
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+
+.info-ratio1 {
+    width: 40%;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 75%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.back-spiral {
+    position: absolute;
+    width: 80%;
+}
+
+.profile > div {
+    width: 70%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--barleywhite);
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack > p:first-child {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Boston Angel', sans-serif;
+    color: var(--barleywhite);
+}
+
+.stack > div  {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-ratio2 {
+    width: 60%;
+    height: 100%;
+}
+
+.back-cont, .educ-cont {
+    width: 100%;
+    height: 54%;
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+.back-cont > div {
+    position: relative;
+    width: 92%;
+    height: auto;
+    padding: 3%;
+    border-radius: 1.5rem;
+    border: solid 3px var(--barleywhite);
+    background-color: rgb(var(--rangoongreen), 0.0);
+}
+
+.back-cont > div > p:first-child{
+    margin: 0%;
+    font-size: 2rem;
+    font-family: 'Boston Angel';
+    color: var(--barleywhite);
+}
+
+.back-cont > div > p:nth-child(2){
+    text-align: justify;
+    text-indent: 4rem;
+    line-height: 2rem;
+    margin: 0%;
+    font-size: 1rem;
+    color: var(--barleywhite);
+}
+
+.back-cont > div > img {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 3rem;
+}
+
+.educ-cont > div {
+    position: relative;
+    width: 92%;
+    height: 75%;
+    padding: 3%;
+    border-radius: 1.5rem;
+    border: solid 3px var(--barleywhite);
+    background-color: rgb(var(--rangoongreen), 0.0);
+}
+
+.educ-cont > div > p:first-child {
+    margin: 0% 0% 0% 0%;
+    font-size: 2rem;
+    font-family: 'Boston Angel', sans-serif;
+    color: var(--barleywhite);
+}
+
+ul {
+    line-height: 1.5rem;
+    color: var(--barleywhite);
 }
