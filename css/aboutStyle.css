@@ -80,18 +80,6 @@ main {
     flex-direction: row;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .info-ratio2 {
     width: 60%;
     height: 100%;
@@ -157,4 +145,50 @@ main {
 ul {
     line-height: 1.5rem;
     color: var(--barleywhite);
+}
+
+.cert-header {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box;
+    margin: 10%;
+    padding: 5px 8px;
+    width: 92%;
+    height: 14vh;
+    background-color: var(--barleywhite);
+}
+
+.cert-header > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: solid 3px var(--rangoongreen);
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.cert-header > div > p {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Boston Angel';
+}
+
+.cert-header img {
+    position: absolute;
+    width: 4rem;
+}
+
+.cert-header > div > img:first-child {
+    top: 5%;
+    right: 1%;
+}
+
+.cert-header > div > img:nth-child(2) {
+    bottom: 5%;
+    left: 1%;
 }
