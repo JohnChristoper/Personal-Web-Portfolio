@@ -1,8 +1,7 @@
 :root {
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
-    --boulder: #7A7A7A;
-    --cta: #f21202;
+    --cta: #E8440A;
 }
 
 main {
@@ -12,7 +11,7 @@ main {
 
     padding-top: 12vh;
     width: 100%;
-    height: 4000px;
+    height: auto;
 }
 
 .name {
@@ -154,7 +153,7 @@ ul {
     align-items: center;
     justify-items: center;
     box-sizing: border-box;
-    margin: 10%;
+    margin: 10% 0% 5% 0%;
     padding: 5px 8px;
     width: 92%;
     height: 14vh;
@@ -191,4 +190,176 @@ ul {
 .cert-header > div > img:nth-child(2) {
     bottom: 5%;
     left: 1%;
+}
+
+.cert-container {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 25rem;
+    width: 75%;
+    column-gap: 4%;
+}
+
+.cert {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert img {
+    width: 100%;
+    height: 50%;
+}
+
+.cert p {
+    color: var(--barleywhite);
+}
+
+.cert p:nth-child(2) {
+    margin: 5% 0 0 0;
+    font-size: 1.4rem;
+    font-family: 'Boston Angel';
+}
+
+.cert p:nth-child(3) {
+    margin: 0;
+}
+
+.cert p:nth-child(4) {
+    margin: 7% 0;
+}
+
+.line-break {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 92%;
+}
+.line-break div {
+    width: 100%;
+    height: 2px;
+    background-color: var(--barleywhite);
+}
+
+.line-break img:first-child {
+    margin: 0 1% 1% 0;
+    width: 5%;
+    align-self: flex-end;
+}
+
+.line-break img:last-child {
+    margin: 1% 0 0 1%;
+    width: 5%;
+}
+
+.learning-ratio {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: auto;
+    margin: 4rem 0;
+}
+
+.learning {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.learning > p {
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    color: var(--barleywhite);
+    font-family: 'Boston Angel';
+}
+
+.tools, .hobbies {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    width: 70%;
+}
+
+.tools > div, 
+.hobbies > div {
+    display: flex;
+    box-sizing: border-box;
+    width: auto;
+    height: 2.3rem;
+    margin: 3% 5% 0 0;
+    border-radius: 20px;
+    border: solid var(--barleywhite) 2px;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.tools > div p,
+.hobbies > div > p{
+    margin: 0.4rem 1rem;
+    color: var(--barleywhite);
+}
+
+.photo-ratio{
+    width: 50%;
+}
+
+.photo-ratio img {
+    width: 100%;
+}
+
+.together-ratio {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 25%;
+    height: 12rem;
+}
+
+.together-ratio > p {
+    align-self: center;
+    font-size: 1.5rem;
+    font-family: 'Boston Angel';
+    color: var(--barleywhite);
+}
+
+.work-btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0);
+    box-sizing: content-box;
+    height: 15%;
+    padding: 5%;
+    border: solid 2px var(--barleywhite);
+}
+
+.work-mask {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+    background-color: var(--cta);
+}
+
+.work-btn p {
+    z-index: 3;
+    color: var(--barleywhite);
+}
+
+.work-btn p:nth-child(3) {
+    font-size: 1.3rem;
+    font-family: 'Boston Angel';
+}
+
+.work-btn:hover {
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.work-btn:hover .work-mask {
+    width: 100%;
 }

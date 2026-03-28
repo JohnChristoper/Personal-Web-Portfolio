@@ -2,7 +2,7 @@
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
     --boulder: #7A7A7A;
-    --cta: #f21202;
+    --cta: #E8440A;
 }
 
 main {
@@ -275,6 +275,10 @@ hr {
     height: 100%;
     transition: width 0.3s ease;
     background-color: var(--cta);
+}
+
+.view-button:hover {
+    border-color: rgb(0, 0, 0, 0);
 }
 
 .view-button:hover .view-mask {

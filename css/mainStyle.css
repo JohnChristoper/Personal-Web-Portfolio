@@ -1,7 +1,6 @@
 :root {
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
-    --boulder: #7A7A7A;
 }
 
 body {
@@ -48,9 +47,7 @@ header {
     min-height: 10px;
     margin: 0px 0px 0px 0px;
 
-    background-color: rgb(var(--rangoongreen), 0.1);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    background-color: var(--rangoongreen);
 }
 
 .logo { 
