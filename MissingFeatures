@@ -2,4 +2,4 @@
 2. Create an animation for each button
     a. A transition from dark background to barleywhite
     b. ease in from left to right
-3. 
+3. Fix media query of indexStyle.css and mainStyle.css

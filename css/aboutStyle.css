@@ -9,7 +9,7 @@ main {
     flex-direction: column;
     position: relative;
 
-    padding-top: 12vh;
+    padding-top: 5rem;
     width: 100%;
     height: auto;
 }
@@ -84,9 +84,16 @@ main {
     height: 100%;
 }
 
-.back-cont, .educ-cont {
+.back-cont {
     width: 100%;
     height: 54%;
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+.educ-cont {
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     padding: 3%;
 }
@@ -156,7 +163,7 @@ ul {
     margin: 10% 0% 5% 0%;
     padding: 5px 8px;
     width: 92%;
-    height: 14vh;
+    height: 5.3rem;
     background-color: var(--barleywhite);
 }
 
@@ -363,3 +370,17 @@ ul {
 .work-btn:hover .work-mask {
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+    .back-cont {
+        height: 60%;
+    }
+
+    .cert img {
+        height: 40%;
+    }
+
+    .tools, .hobbies {
+        width: 80%;
+    }
+}   
