@@ -269,8 +269,8 @@ main {
 
 .learning-ratio {
     align-self: center;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 92%;
     height: auto;
     margin: 4rem 0;
@@ -279,7 +279,6 @@ main {
 .learning {
     display: flex;
     flex-direction: column;
-    width: 50%;
 }
 
 .learning > p {
@@ -312,10 +311,6 @@ main {
 .hobbies > div > p{
     margin: 0.4rem 1rem;
     color: var(--barleywhite);
-}
-
-.photo-ratio{
-    width: 50%;
 }
 
 .photo-ratio img {
@@ -519,7 +514,95 @@ main {
 }
 
 /*============  MOBILE  ==================*/
-@media (max-width: 375px) {
-    
+@media (max-width: 376px) {
+    .profile-ratio {
+        grid-template-columns: 1fr;
+
+    }
+
+    .qoute {
+        font-size: 0.8rem;
+    }
+
+    .back-section {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    .back-ratio, .educ-ratio {
+        padding: 1rem;
+    }
+
+    .back-ratio > p:first-child, .educ-ratio > p:first-child {
+        top: -1.2rem;
+    }
+
+    .back-container > p {
+        font-size: 0.8rem;
+    }
+
+    .year {
+        font-size: 1rem;
+    }
+
+    .school {
+        font-size: 1.2rem;
+    }
+
+    .program {
+        font-size: 0.8rem;
+    }
+
+    .tech-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stack-item {
+        font-size: 0.7rem;
+    }
+
+    .cert-header {
+        height: 2rem;
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .cert-header > div {
+        border-width: 2px;
+    }
+
+    .cert-header > div > img {
+        display: none;
+    }
+
+    .cert-header > div > p {
+        font-size: 1.4rem;
+    }
+
+    .cert-container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    .cert img {
+        height: 11rem;
+    }
+
+    .line-break img {
+        display: none;
+    }
+
+    .learning-ratio {
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .learning > p:first-child {
+        margin: 0;
+    }
+
+    .together-ratio {
+        width: 50%;
+    }
 }
 
