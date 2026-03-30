@@ -1,11 +1,13 @@
 :root {
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
+    --cta: #E8440A;
+    --accent: #B89A6A;
 }
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway';
     background-color: var(--rangoongreen);
     background-image: url('../Assets/Images/grain-texture.png');
     background-size: 100%;
@@ -14,8 +16,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Instrument Sans';
-    src: url('../Assets/Fonts/instrument-sans-font-family/InstrumentSans-Regular-BF645daa1019d9e.ttf');
+    font-family: 'Raleway';
+    src: url('../Assets/Fonts/Raleway-Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -29,7 +31,7 @@ body {
 
 @font-face {
     font-family: 'Pristina';
-    src: url('Assets/Fonts/Pristina Regular.ttf');
+    src: url('Assets/Fonts/Pristina_Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -224,6 +226,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        height: 3.7rem;
+    }
+
     .logo {
         max-height: 8vh;
     }
@@ -271,16 +277,13 @@ footer {
     }
 }
 
-@media (max-width: 426px) {
-    main {
-        display: none;
-    }
-
+@media (max-width: 375px) {
     header {
         height: 60px;
     }
 
     .hamburger {
+        top: 3%;
         margin-top: 0%;
     }
 
@@ -289,7 +292,7 @@ footer {
     }
 
     .menu-blur {
-        width: 27%;
+        width: 28%;
     }
 
     nav {
@@ -332,12 +335,5 @@ footer {
 
     .socials-ratio > div > p {
         display: none;
-    }
-}
-
-@media (max-width: 321px) {
-    .menu {
-        width: 86vw;
-        height: 120vh;
     }
 }

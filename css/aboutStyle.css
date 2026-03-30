@@ -2,6 +2,8 @@
     --barleywhite: #FFF2CC;
     --rangoongreen: #161616;
     --cta: #E8440A;
+    --accent: #B89A6A;
+    --muted: #555;
 }
 
 main {
@@ -14,143 +16,147 @@ main {
     height: auto;
 }
 
+.profile-ratio {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 92%;
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+
 .name {
-    margin: 3% 0% 0% 3%;
-    font-size: 4rem;
-    font-family: 'Boston Angel', sans-serif;
-    color: var(--barleywhite);
-}
-
-.opening {
-    margin: 0% 3% 3% 3%;
-    font-size: 1rem;
-    color: var(--barleywhite);
-}
-
-.info-cont {
-    display: flex;
-    flex-direction: row;
-    height: 650px;
-}
-
-.info-ratio1 {
-    width: 40%;
-    height: 100%;
-}
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 75%;
-    padding: 2rem;
-    box-sizing: border-box;
-}
-
-.back-spiral {
-    position: absolute;
-    width: 80%;
-}
-
-.profile > div {
-    width: 70%;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: var(--barleywhite);
-}
-
-.stack {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stack > p:first-child {
+    line-height: 1;
     margin: 0;
-    font-size: 1.5rem;
+    color: var(--barleywhite);
+    font-size: 5rem;
     font-family: 'Boston Angel', sans-serif;
+}
+
+.role {
+    letter-spacing: 0.25em;
+    color: var(--accent);
+}
+
+.qoute {
     color: var(--barleywhite);
 }
 
-.stack > div  {
-    display: flex;
-    flex-direction: row;
-}
-
-.info-ratio2 {
-    width: 60%;
-    height: 100%;
-}
-
-.back-cont {
-    width: 100%;
-    height: 54%;
-    box-sizing: border-box;
-    padding: 3%;
-}
-
-.educ-cont {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 3%;
-}
-
-.back-cont > div {
-    position: relative;
+.line {
+    align-self: center;
     width: 92%;
-    height: auto;
-    padding: 3%;
-    border-radius: 1.5rem;
-    border: solid 3px var(--barleywhite);
-    background-color: rgb(var(--rangoongreen), 0.0);
+    height: 0.1px;
+    background-color: var(--muted);
 }
 
-.back-cont > div > p:first-child{
-    margin: 0%;
-    font-size: 2rem;
-    font-family: 'Boston Angel';
-    color: var(--barleywhite);
+.back-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    align-self: center;
+    width: 92%;
+    margin-top: 3rem;
 }
 
-.back-cont > div > p:nth-child(2){
-    text-align: justify;
-    text-indent: 4rem;
-    line-height: 2rem;
-    margin: 0%;
-    font-size: 1rem;
-    color: var(--barleywhite);
+.back-ratio, .educ-ratio {
+    position: relative;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-top: 1px solid var(--accent);
 }
 
-.back-cont > div > img {
+.back-ratio > p:first-child, .educ-ratio > p:first-child{
     position: absolute;
-    top: 5%;
-    right: 5%;
-    width: 3rem;
+    top: -1.7rem;
+    left: 0;
+    color: var(--accent);
+    letter-spacing: 0.4rem;
+    background-color: var(--rangoongreen);
 }
 
-.educ-cont > div {
-    position: relative;
-    width: 92%;
-    height: 75%;
-    padding: 3%;
-    border-radius: 1.5rem;
-    border: solid 3px var(--barleywhite);
-    background-color: rgb(var(--rangoongreen), 0.0);
+.back-container {
+    box-sizing: border-box;
 }
 
-.educ-cont > div > p:first-child {
-    margin: 0% 0% 0% 0%;
-    font-size: 2rem;
+.back-container p {
+    margin: 0 0 1rem 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--barleywhite);
+}
+
+.year {
+    margin: 1rem 0 0 0;
+    color: var(--cta);
+}
+
+.school {
+    margin: 0;
+    font-size: 1.3rem;
     font-family: 'Boston Angel', sans-serif;
     color: var(--barleywhite);
 }
 
-ul {
-    line-height: 1.5rem;
+.program {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.tech-heading {
+    position: relative;
+    align-self: center;
+    width: 92%;
+}
+
+.tech-heading p {
+    letter-spacing: 0.4rem;
+    margin: 0;
+    color: var(--accent);
+}
+
+.tech-heading hr {
+    border: none;
+    border: 1px solid var(--muted);
+    color: var(--muted);
+}
+
+.tech-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-self: center;
+    width: 92%;
+}
+
+.tech-section > div > p{
+    font-size: 0.8rem;
+    color: var(--accent);
+}
+
+.items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-item:hover { opacity: 1; }
+
+.stack-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
     color: var(--barleywhite);
+    opacity: 0.65;
+    transition: opacity 0.2s;
+}
+
+.stack-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
 }
 
 .cert-header {
@@ -195,6 +201,7 @@ ul {
 }
 
 .cert-header > div > img:nth-child(2) {
+    transform: rotate(180deg);
     bottom: 5%;
     left: 1%;
 }
@@ -203,7 +210,6 @@ ul {
     align-self: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 25rem;
     width: 75%;
     column-gap: 4%;
 }
@@ -230,6 +236,7 @@ ul {
 
 .cert p:nth-child(3) {
     margin: 0;
+    color: var(--accent);
 }
 
 .cert p:nth-child(4) {
@@ -244,19 +251,20 @@ ul {
 }
 .line-break div {
     width: 100%;
-    height: 2px;
-    background-color: var(--barleywhite);
+    height: 1px;
+    background-color: var(--muted);
 }
 
 .line-break img:first-child {
     margin: 0 1% 1% 0;
-    width: 5%;
+    width: 3%;
     align-self: flex-end;
 }
 
 .line-break img:last-child {
     margin: 1% 0 0 1%;
-    width: 5%;
+    width: 3%;
+    transform: rotate(180deg);
 }
 
 .learning-ratio {
@@ -296,7 +304,7 @@ ul {
     height: 2.3rem;
     margin: 3% 5% 0 0;
     border-radius: 20px;
-    border: solid var(--barleywhite) 2px;
+    border: solid var(--barleywhite) 1px;
     background-color: rgb(0, 0, 0, 0);
 }
 
@@ -339,7 +347,7 @@ ul {
     box-sizing: content-box;
     height: 15%;
     padding: 5%;
-    border: solid 2px var(--barleywhite);
+    border: solid 1px var(--barleywhite);
 }
 
 .work-mask {
@@ -371,6 +379,7 @@ ul {
     width: 100%;
 }
 
+/*============  LAPTOP  ==================*/
 @media (max-width: 1024px) {
     .back-cont {
         height: 60%;
@@ -381,6 +390,136 @@ ul {
     }
 
     .tools, .hobbies {
-        width: 80%;
+        width: 87%;
     }
 }   
+
+/*============  TABLET  ==================*/
+@media (max-width: 768px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .role {
+        font-size: 0.7rem;
+    }
+
+    .qoute {
+        font-size: 0.7rem;
+    }
+
+    .back-ratio > p:first-child, .educ-ratio p:first-child {
+        font-size: 0.7rem;
+    }
+
+    .back-container p {
+        font-size: 0.7rem;
+    }
+
+    .year {
+        font-size: 0.8rem;
+    }
+
+    .school {
+        font-size: 1rem;
+    }
+
+    .program {
+        font-size: 0.7rem;
+    }
+
+    .tech-heading {
+        font-size: 0.7rem;
+    }
+
+    .tech-section > div > p {
+        font-size: 0.7rem;
+    }
+
+    .stack-item {
+        font-size: 0.6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cert-header {
+        height: 3.5rem;
+        margin-top: 5%;
+    }
+
+    .cert-header > div > p {
+        font-size: 1.8rem;
+    }
+
+    .cert-header img {
+        width: 2rem;
+    }
+
+    .cert img {
+        height: 7.5rem;
+    }
+
+    .cert p:nth-child(2) {
+        font-size: 1.2rem;
+    }
+
+    .cert p:nth-child(3) {
+        font-size: 0.9rem;
+    }
+
+    .cert p:nth-child(4) {
+        font-size: 0.78em;
+    }
+
+    .learning > p {
+        font-size: 1.2rem;
+    }
+
+    .tools, .hobbies {
+        width: 100%;
+    }
+
+    .tools > div, .hobbies > div {
+        height: 1.5rem;
+    }
+
+    .tools > div p, .hobbies > div p {
+        font-size: 0.6rem;
+    }
+
+    .together-ratio {
+        height: 9rem;
+    }
+
+    .together-ratio > p {
+        font-size: 1.2rem;
+    }
+
+    .work-btn {
+        height: 15%;
+    }
+
+    .work-btn p:nth-child(3) {
+        font-size: 1rem;
+    }
+}
+
+/*============  MOBILE  ==================*/
+@media (max-width: 375px) {
+    
+}
+

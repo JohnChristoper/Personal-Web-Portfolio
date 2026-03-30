@@ -1,0 +1,16 @@
+:root {
+    --barleywhite: #FFF2CC;
+    --rangoongreen: #161616;
+    --cta: #E8440A;
+    --accent: #B89A6A;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+}
