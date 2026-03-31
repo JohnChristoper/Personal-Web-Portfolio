@@ -3,6 +3,8 @@
     --rangoongreen: #161616;
     --cta: #E8440A;
     --accent: #B89A6A;
+    --muted: #555;
+
 }
 
 main {
@@ -12,7 +14,6 @@ main {
 
     padding-top: 5rem;
     width: 100%;
-    height: 1000px;
 }
 
 .intro {
@@ -32,7 +33,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-    margin: 4rem;
+    margin: 4rem 0 1rem 0;
     justify-content: center;
     align-self: center;
 }
@@ -41,14 +42,258 @@ main {
     padding: 0.2rem 2rem;
     margin: 0 1rem 1rem 0;
     border-radius: 50px;
-    border: 2px solid var(--barleywhite);
+    border: 1px solid var(--barleywhite);
     font-size: 1.5rem;
     font-family: 'DM Serif Display';
     color: var(--barleywhite);
     transition: background-color 0.5s ease;
+    cursor: pointer;
 }
 
-.filter:hover {
+.filter:hover, .filter.active {
     background-color: var(--barleywhite);
     color: var(--rangoongreen);
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    gap: 3rem 1rem; 
+    align-items: start;
+    align-self: center;
+    margin: 0 0 4rem 0;
+}
+
+.cards-grid img {
+    border-radius: 10px 10px 0 0;
+    height: 45%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    transform: translateY(0);
+    width: 22.5rem;
+    height: 28rem;
+    border: 1px solid var(--barleywhite);
+    border-radius: 10px;
+    background-color: var(--rangoongreen);
+}
+
+.project-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.project-card.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;   /* takes it out of grid flow */
+    visibility: hidden;
+}
+
+.project-title {
+    margin: 2% 0 0 5%;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-family: 'DM Serif Display';
+    color: var(--barleywhite);
+}
+
+.project-card hr {
+    width: 10%;
+    margin-left: 5%;
+    border-color: var(--accent);
+}
+
+.project-desc {
+    margin: 0 5% 0 5%;
+    line-height: 1.1rem;
+    font-size: 0.9rem;
+    color: var(--barleywhite);
+}
+
+.tools-ratio {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: auto 5% 0 5%;
+}
+
+.tools-ratio p {
+    display: inline;
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0 0 0;
+    background-color: var(--muted);
+    color: var(--barleywhite);
+}
+
+.view {
+    display: inline;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin: 4px 0 1rem 5%;
+    text-decoration: none;
+    position: relative;
+}
+
+.view::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    transition: width .3s ease-out;
+    background-color: var(--accent);
+}
+
+.view:hover::after {
+    width: 21.4%;
+}
+
+/*============  LAPTOP  ==================*/
+@media (max-width: 1024px) {
+    .intro > p {
+        font-size: 1.5rem;
+    }
+
+    .filter {
+        font-size: 1.2rem;
+        padding: 0.2rem 1.5rem;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-desc {
+        font-size: 0.7rem;
+    }
+
+    .tools-ratio p {
+        font-size: 0.5rem;
+    }
+
+    .view {
+        font-size: 0.7rem;
+    }
+}
+
+/*============  TABLET  ==================*/
+@media (max-width: 768px) {
+    .intro {
+        margin-top: 1rem;
+    }
+
+    .intro > p {
+        font-size: 1.2rem;
+    }
+
+    .filter {
+        font-size: 1rem;
+        padding: 0.2rem 1rem;
+    }
+
+    .projects-nav {
+        margin: 3rem 0 0 0;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+
+    .tools-ratio p {
+        font-size: 0.5rem;
+    }
+
+    .view {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .intro {
+        margin-top: 1rem;
+    }
+
+    .intro > p {
+        font-size: 1.2rem;
+    }
+
+    .filter {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .projects-nav {
+        margin: 3rem 0 0 0;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
+}
+
+/*============  MOBILE  ==================*/
+@media (max-width: 376px) {
+    .intro {
+        margin-top: 0rem;
+    }
+
+    .intro > p {
+        font-size: 1rem;
+    }
+
+    .filter {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .projects-nav {
+        margin: 3rem 0 0 0;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-desc {
+        font-size: 0.8rem;
+    }
 }

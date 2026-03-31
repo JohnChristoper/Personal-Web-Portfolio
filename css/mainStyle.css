@@ -3,6 +3,7 @@
     --rangoongreen: #161616;
     --cta: #E8440A;
     --accent: #B89A6A;
+    --muted: #555;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
@@ -238,6 +239,7 @@ footer {
     align-self: flex-end;
 }
 
+/*===================  TABLETS  ======================*/
 @media (max-width: 768px) {
     header {
         height: 3.7rem;
@@ -290,6 +292,7 @@ footer {
     }
 }
 
+/*===============  MOBILE DEVICES  ======================*/
 @media (max-width: 376px) {
     header {
         height: 60px;

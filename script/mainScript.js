@@ -16,3 +16,24 @@ menuBlur.addEventListener('click', () => {
     menuBlur.style.display = 'none';
 });
 
+const filter = document.querySelectorAll('.filter');
+const card = document.querySelectorAll('.project-card');
+
+filter.forEach( btn => {
+    btn.addEventListener('click', () => {
+        filter.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-filter');
+        
+        card.forEach( c => {
+            const isVisible = category === 'all' || c.getAttribute('data-category') === category;
+
+            if(isVisible) {
+                c.classList.remove('hidden');
+            } else {
+                c.classList.add('hidden');
+            }
+        });
+    });
+});
