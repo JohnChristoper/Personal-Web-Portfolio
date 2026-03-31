@@ -31,7 +31,7 @@ main {
     margin: 0;
     color: var(--barleywhite);
     font-size: 5rem;
-    font-family: 'Boston Angel', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
 }
 
 .role {
@@ -94,7 +94,7 @@ main {
 .school {
     margin: 0;
     font-size: 1.3rem;
-    font-family: 'Boston Angel', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
     color: var(--barleywhite);
 }
 
@@ -187,7 +187,7 @@ main {
 .cert-header > div > p {
     margin: 0;
     font-size: 3rem;
-    font-family: 'Boston Angel';
+    font-family: 'DM Serif Display';
 }
 
 .cert-header img {
@@ -231,7 +231,7 @@ main {
 .cert p:nth-child(2) {
     margin: 5% 0 0 0;
     font-size: 1.4rem;
-    font-family: 'Boston Angel';
+    font-family: 'DM Serif Display';
 }
 
 .cert p:nth-child(3) {
@@ -285,7 +285,7 @@ main {
     margin: 2rem 0 0 0;
     font-size: 2rem;
     color: var(--barleywhite);
-    font-family: 'Boston Angel';
+    font-family: 'DM Serif Display';
 }
 
 .tools, .hobbies {
@@ -328,7 +328,7 @@ main {
 .together-ratio > p {
     align-self: center;
     font-size: 1.5rem;
-    font-family: 'Boston Angel';
+    font-family: 'DM Serif Display';
     color: var(--barleywhite);
 }
 
@@ -363,7 +363,7 @@ main {
 
 .work-btn p:nth-child(3) {
     font-size: 1.3rem;
-    font-family: 'Boston Angel';
+    font-family: 'DM Serif Display';
 }
 
 .work-btn:hover {

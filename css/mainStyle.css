@@ -5,34 +5,23 @@
     --accent: #B89A6A;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Aubrey&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fredoka:wght@300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+@font-face {
+    font-family: 'DM Serif Display';
+    src: local('DM Serif Display'),
+        url('../Assets/Fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
 
 @font-face {
     font-family: 'Raleway';
-    src: local('Raleway') 
-        url('../Assets/Fonts/Raleway-Regular.ttf') format('truetype'),
+    src: local('Raleway'),
         url('../Assets/Fonts/Raleway-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: 'Boston Angel', 'sans-serif';
-    src: local('Boston Angel') 
-        url('Assets/Fonts/Boston Angel Regular.ttf') format('truetype'),
-        url('Assets/Fonts/Boston Angel Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Pristina';
-    src: local('Pristina') 
-        url('Assets/Fonts/Pristina_Regular.ttf') format('truetype'),
-        url('Assets/Fonts/Pristina_Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Dancing Script';
+    src: local('Dancing Script'),
+        url('../Assets/Fonts/DancingScript-Regular.ttf') format('truetype');
 }
 
 body {
@@ -186,7 +175,7 @@ footer {
 .copyright-ratio > p:first-child {
     margin: 4% 0% 0% 0%;
     font-size: x-large;
-    font-family: 'Boston Angel', serif;
+    font-family: 'DM Serif Display', serif;
 }
 
 .copyright-ratio > p:nth-child(2) {

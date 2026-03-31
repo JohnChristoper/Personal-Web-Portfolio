@@ -15,3 +15,4 @@ menuBlur.addEventListener('click', () => {
     toggle.checked = false;
     menuBlur.style.display = 'none';
 });
+
