@@ -3,10 +3,11 @@
     --rangoongreen: #161616;
     --cta: #E8440A;
     --muted: #555;
+    --accent: #B89A6A;
 }
 
 main {
-    padding-top: 12vh;  
+    padding-top: 5rem;  
     height: auto;
 }
 
@@ -14,13 +15,13 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 88vh;
+    height: 31rem;
 }
 
 .hero p {
     position: relative;
     width: fit-content;
-    font-family: 'Pristina';
+    font-family: 'Dancing Script';
     font-size: 24px;
     color: var(--barleywhite);
 }
@@ -51,7 +52,7 @@ main {
 
 .about > img:first-child {
     align-self: center;
-    width: 20vw;
+    width: 13rem;
 }
 
 hr {
@@ -65,7 +66,7 @@ hr {
     margin-top: 1%;
     margin-right: 5%;
     align-self: flex-end;
-    width: 3vw;
+    width: 2rem;
 }
 
 .about-ratio {
@@ -78,25 +79,19 @@ hr {
     background-color: var(--barleywhite);
 }
 
-.about-ratio > img:first-child{
-    width: 3vw;
-    height: 3vh;
-    margin-top: 2vh;
-    margin-left: 2vw;
-}
-
 .introduction {
     white-space: pre-line;
-    margin: 4vh 0px 0px 2vw;
-    font-size: clamp(14px, 4vw, 45px);
+    margin: 1rem 0 1rem 2rem;
+    font-size: 2.8rem;
     font-family: 'DM Serif Display';
 }
 
 .learn-ratio {
     position: relative;
-    width: 17vw;
-    height: 9vh;
-    margin-left: 5vw;
+    width: 14rem;
+    height: 3.5rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
     padding: 0;
     border: none;
     background: none;
@@ -146,7 +141,6 @@ hr {
 .highlights {
     display: flex;
     flex-direction: column;
-    height: 233vh;
 }
 
 .highlights-header {
@@ -192,25 +186,25 @@ hr {
     box-sizing: border-box;
     overflow: hidden;
     width: 100%;
-    height: 80vh;
-    border-radius: 1vw;
+    height: 30rem;
+    border-radius: 10px;
+    border: 1px solid var(--barleywhite);
     padding:3% 4%;
-    background-color: var(--barleywhite);
+    background-color: var(--rangoongreen);
 }
 
 .item-img-wrapper {
     box-sizing: border-box;
     overflow: hidden;
-    margin: 0vh 0vh 2vh 0vh;
     width: 100%;
-    height: 45%;
+    height: 12rem;
 }
 
 .item-img-wrapper > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 2vh;
+    border-radius: 5px 5px 0 0;
     transition: transform 0.4s ease;
 }
 
@@ -219,24 +213,41 @@ hr {
     filter: brightness(0.8);
 }
 
+.item > hr {
+    width: 10%;
+    align-self: flex-start;
+}
+
 .project-name {
-    margin: 2vh 0vh 0vh 0vh;
-    font-size: 26px;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: var(--barleywhite);
     font-family: 'DM Serif Display';
 }
 
-.project-tools {
-    margin: 0;
-    font-size: 3vh;
-    font-weight: bold;
+.project-desc {
+    font-size: 0.9rem;
+    color: var(--accent);
 }
 
-.project-desc {
-    position: absolute;
-    margin: 0;
-    left: 4%;
-    top: 67%;
-    font-size: 1rem;
+.tools {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+}
+
+.tools > p {
+    margin-right: 1rem;
+    padding: 0.2rem 0.9rem;
+    font-size: 0.6rem;
+    border: 1px solid var(--muted);
+    color: var(--barleywhite);
+    background-color: var(--muted);
+}
+
+.tools > p:hover {
+    background-color: var(--rangoongreen);
+    border: 1px solid var(--barleywhite);
 }
 
 .view-button {
@@ -246,7 +257,7 @@ hr {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 5vh 0vh 5vh 0vh;
+    margin: 3rem 0;
     width: 25%;
     height: 5%;
     padding: 0;
@@ -254,15 +265,19 @@ hr {
     border: 1px solid var(--barleywhite);
 }   
 
-.view-button > p {
+.view-button > p:not(:nth-child(3)) {
     z-index: 3;
     font-family: 'DM Serif Display';
     color: var(--barleywhite);
+    margin: 1rem 0;
 }
 
 .view-button >p:nth-child(3) {
-    margin: 0vw 5vw 0vw;
+    margin: 0 3rem;
     font-size: large;
+    z-index: 3;
+    font-family: 'DM Serif Display';
+    color: var(--barleywhite);
 }
 
 .view-mask {
@@ -277,7 +292,7 @@ hr {
 }
 
 .view-button:hover {
-    border-color: rgb(0, 0, 0, 0);
+    border-color: var(--cta);
 }
 
 .view-button:hover .view-mask {
@@ -290,25 +305,13 @@ hr {
 
 .highlights > img:last-child {
     align-self: center;
-    width: 20vw;
+    width: 15rem;
     transform: rotate( 180deg);
 }
 
 @media (max-width: 1024px) {
-    .learn-ratio {
-        height: 7vh;
-    }
-
-    .highlights {
-        height: 187vh;
-    }
-
     .highlights-header > p {  
         margin: 0;
-    }
-
-    .about-ratio {
-        margin-bottom: 5vh;
     }
 
     .projects-grid {
