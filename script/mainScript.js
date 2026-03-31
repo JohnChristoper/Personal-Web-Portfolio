@@ -37,3 +37,18 @@ filter.forEach( btn => {
         });
     });
 });
+
+document.querySelectorAll('.typewriter').forEach(el => {
+    const text = el.textContent;
+    const speed = el.dataset.speed || 30; // ms per character, override with data-speed="30"
+    el.textContent = '';
+
+    let i = 0;
+    const type = () => {
+        if (i < text.length) {
+            el.textContent += text[i++];
+            setTimeout(type, speed);
+        }
+    };
+    type();
+});

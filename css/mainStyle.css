@@ -233,12 +233,6 @@ footer {
     margin: 0%;
 }
 
-.socials-ratio > img {
-    width: 4vw;
-    margin: 0% 4% 0% 0%;
-    align-self: flex-end;
-}
-
 /*===================  TABLETS  ======================*/
 @media (max-width: 768px) {
     header {

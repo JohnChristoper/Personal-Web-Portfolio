@@ -8,5 +8,130 @@
         <link rel="stylesheet" href="css/mainStyle.css">
     </head>
     <body>
+        <header>
+            <img id="hero" class="logo" src="Assets/Images/Logo.png" alt="Image of a logo">
+
+            <div class="menu-container">
+                <input type="checkbox" id="menu-toggle" title="Toggle for menu">
+                
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="menu-blur"></div>
+                <div class="menu">
+                    <div class="menu-header">
+
+                    </div>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-intro-ratio">
+                <p class="contact-intro typewriter">Have an idea, an opportunity, or a question? My inbox is open. Let's build 
+something worth talking about !</p>
+                <div class="status-ratio">
+                    <div class="green-dot blink"></div>
+                    <p>CURRENTLY OPEN TO INSTERNSHIP & COLLABORATIONS</p>
+                </div>
+            </div>
+
+            <div class="content-ratio">
+                <div class="details-ratio">
+                    <div class="details">
+                        <p class="details-heading">DETAILS</p>
+                        <h6>EMAIL</h6>
+                        <p>johnchristopercallos@gmail.com</p>
+                        <h6>LOCATION</h6>
+                        <p>Valenzuela City, Philippines</p>
+                        <h6>RESPONSE TIME</h6>
+                        <p>Usually within 24 hours</p>
+                    </div>
+                    <div class="social-links">
+                        <p class="socials-heading">SOCIAL LINKS</p>
+                        <a href="https://github.com/JohnChristoper">GitHub</a>
+                        <a href="https://www.linkedin.com/in/john-christoper-callos-7a004033a">LinkedIn</a>
+                        <a href="https://www.facebook.com/share/188XKz1ZxM/">Facebook</a>
+                    </div>
+                </div>
+                <div class="form">
+                    <p class="form-heading">SEND ME A MESSAGE</p>
+
+                    <div class="input-ratio">
+                        <div class="input-name">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="input-email">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email">
+                        </div>
+                    </div>
+
+                    <div class="send-ratio">
+                        <label for="subject">SUBJECT</label>
+                        <textarea id="subject" name="subject" placeholder="Message Subject"></textarea>
+                    </div>
+                    <div class="message-ratio">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button class="send-btn">
+                        <div class="send-mask"></div>
+                        <p>✦</p>
+                        <p>SEND MESSAGE !</p>
+                        <p>✦</p>
+                    </button>
+
+                    <p>I’ll get back to you as soon as possible</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright-ratio">
+                <p>John Christoper</p>
+                <p>"Aspiring Software Engineer & Graphic Designer"</p>
+                <p>© 2026 John Christopher. All rights reserved.</p>
+            </div>
+
+            <div class="foot-nav-ratio">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="socials-ratio">
+                <div>
+                    <img src="Assets/Images/github_icon.png" alt="Image of github icon">
+                    <p>https://github.com/JohnChristoper</p>
+                </div>
+                <div>
+                    <img src="Assets/Images/linkedin_icon.png" alt="Image of linkedin icon">
+                    <p>https://www.linkedin.com/in/john-christoper-callos-7a004033a</p>
+                </div>
+                <div>
+                    <img src="Assets/Images/email_icon.png" alt="Image of email icon">
+                    <p>johnchristopercallos@gmail.com</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script/mainScript.js" defer></script>
     </body>
 </html>

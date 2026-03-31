@@ -1,0 +1,223 @@
+:root {
+    --barleywhite: #FFF2CC;
+    --rangoongreen: #161616;
+    --cta: #E8440A;
+    --accent: #B89A6A;
+    --muted: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.contact-intro-ratio {
+    align-self: center;
+    overflow: hidden;
+    width: 90%;
+    margin: 3rem 0;
+    padding: 0 0 0 3rem;
+    box-sizing: border-box;
+    border-left: 1px solid var(--barleywhite);
+}
+
+.contact-intro {
+    font-family: 'DM Serif Display';
+    font-size: 2rem;
+    color: var(--barleywhite);
+    margin-bottom: 0;
+}
+
+.green-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #00FF15;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+.status-ratio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--accent);
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.content-ratio {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    justify-content: space-between;
+}
+
+.details-ratio {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.details, .social-links {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--accent);
+    width: 100%;
+    position: relative;
+    padding: 1.7rem 0;
+    box-sizing: border-box;
+}
+
+.details-heading, 
+.socials-heading, 
+.form-heading {
+    position: absolute;
+    top: -0.6rem;
+    left: 0;
+    padding: 0 1rem 0 0 ;
+    margin: 0 0 0 0;
+    width: auto;
+    letter-spacing: 0.3rem;
+    color: var(--accent);
+    background-color: var(--rangoongreen);
+}
+
+.details > h6 {
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+    margin: 1rem 0 0 0;
+    color: var(--accent);
+}
+
+.details > p:not(:first-child) {
+    margin: 0.4rem 0 0 0;
+    font-size: 0.9rem;
+    color: var(--barleywhite);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 4rem 0 0 0;
+    border-top: 1px solid var(--accent);
+}
+
+.social-links > a {
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    background-color: var(--muted);
+    color: var(--barleywhite);
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--accent);
+    width: 46%;
+}
+
+.input-ratio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.input-name, .input-email {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.send-ratio,
+.message-ratio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.message-ratio {
+    margin-bottom: 1rem;
+}
+
+.input-name > label, 
+.input-email > label,
+.send-ratio > label,
+.message-ratio > label {
+    font-size: 0.9rem;
+    color: var(--barleywhite);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.input-name > input, 
+.input-email > input, 
+.send-ratio > textarea,
+.message-ratio > textarea {
+    border: 1px solid rgba(255, 242, 204, 0.5);
+    border-radius: 3px;
+    padding: 0.5rem;
+    background-color: var(--muted);
+    color: var(--barleywhite);
+}
+
+.message-ratio > textarea {
+    height: 13rem;
+}
+
+.send-btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0);
+    box-sizing: content-box;
+    border: solid 1px var(--barleywhite);
+    width: 39%;
+}
+
+.send-mask {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+    background-color: var(--cta);
+}
+
+.send-btn p {
+    z-index: 3;
+    color: var(--barleywhite);
+}
+
+.send-btn p:nth-child(3) {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'DM Serif Display';
+}
+
+.send-btn:hover {
+    border-color: rgb(0, 0, 0, 0);
+}
+
+.send-btn:hover .send-mask {
+    width: 100%;
+}
+
+.form > p:last-child {
+    font-size: 0.8rem;
+    color: var(--accent);
+}
