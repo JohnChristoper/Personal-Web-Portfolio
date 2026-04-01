@@ -26,15 +26,25 @@
         url('../Assets/Fonts/DancingScript-Regular.ttf') format('truetype');
 }
 
+#starfield{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    pointer-events:none;
+}
+
 body {
     margin: 0;
     font-family: 'Raleway';
     background-color: var(--rangoongreen);
-    background-image: url('../Assets/Images/wickedbackground.svg');
-    background-size: cover;
-
+    /*background-image: url('../Assets/Images/wickedbackground.svg');
+    background-size: 100%;
+    background-attachment: fixed;
     background-position: top;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 }
 
 header {

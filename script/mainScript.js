@@ -52,3 +52,88 @@ document.querySelectorAll('.typewriter').forEach(el => {
     };
     type();
 });
+
+/* ============================
+    INTERACTIVE STAR BACKGROUND
+============================ */
+
+const canvas = document.getElementById("starfield");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+let mouse = {
+    x: canvas.width/2,
+    y: canvas.height/2
+};
+
+document.addEventListener("mousemove", e=>{
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+});
+
+const stars = [];
+const starCount = 220;
+
+class Star{
+    constructor(){
+        this.x = Math.random()*canvas.width;
+        this.y = Math.random()*canvas.height;
+        this.size = Math.random()*1.5;
+        this.opacity = Math.random()*0.25 + 0.05;
+        this.depth = Math.random()*0.6;
+    }
+
+    draw(px,py){
+
+        let dx = mouse.x - px;
+        let dy = mouse.y - py;
+
+        let distance = Math.sqrt(dx*dx + dy*dy);
+
+        let brightness = this.opacity;
+
+        if(distance < 120){
+            brightness += (120-distance)/240;
+        }
+
+        ctx.beginPath();
+        ctx.arc(px,py,this.size,0,Math.PI*2);
+        ctx.fillStyle = `rgba(255,255,255,${brightness})`;
+        ctx.fill();
+    }
+
+    update(){
+
+        const offsetX = (mouse.x - canvas.width/2)*this.depth*0.02;
+        const offsetY = (mouse.y - canvas.height/2)*this.depth*0.02;
+
+        const px = this.x + offsetX;
+        const py = this.y + offsetY;
+
+        this.draw(px,py);
+    }
+}
+
+for(let i=0;i<starCount;i++){
+    stars.push(new Star());
+}
+
+function animate(){
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    stars.forEach(star=>{
+        star.update();
+    });
+
+    requestAnimationFrame(animate);
+}
+
+animate();
