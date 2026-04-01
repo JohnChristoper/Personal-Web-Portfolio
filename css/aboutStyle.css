@@ -367,7 +367,7 @@ main {
 }
 
 .work-btn:hover {
-    border-color: rgb(0, 0, 0, 0);
+    border-color: var(--cta);
 }
 
 .work-btn:hover .work-mask {

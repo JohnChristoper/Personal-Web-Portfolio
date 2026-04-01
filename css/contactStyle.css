@@ -210,7 +210,7 @@ main {
 }
 
 .send-btn:hover {
-    border-color: rgb(0, 0, 0, 0);
+    border-color: var(--cta);
 }
 
 .send-btn:hover .send-mask {

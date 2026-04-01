@@ -75,7 +75,7 @@ hr {
     align-self: center;
     border-top-right-radius: 120px;
     width: 92%;
-    margin-bottom: 9vh;
+    margin: 2rem 0 3rem 0;
     background-color: var(--barleywhite);
 }
 
@@ -309,7 +309,12 @@ hr {
     transform: rotate( 180deg);
 }
 
+/*================== DESKTOP =====================*/
 @media (max-width: 1024px) {
+    .about-ratio {
+        margin: 2rem 0 0 0;
+    }
+
     .highlights-header > p {  
         margin: 0;
     }
@@ -347,6 +352,7 @@ hr {
     }
 }
 
+/*================== TABLET =====================*/
 @media (max-width: 768px) {
 
     .hero {
@@ -361,17 +367,32 @@ hr {
         top: 4%;
     }
 
+    .learn-btn-background {
+        height: 100%;
+    }
+
+    .learn-btn-arrow-mask {
+        height: 100%;
+    }
+
     .learn-ratio {
-        width: 16vw;
-        height: 6vh;
+        width: 7rem;
+        height: 1.9rem;
+        margin: 0 0 1.5rem 3rem;
+    }
+
+    .introduction {
+        padding: 0 3rem 0 0;
+        font-size: 1.8rem;
+    }
+
+    .about-ratio {
+        margin: 1rem 0 2rem 0;
+        border-radius: 0 100px 0 0;
     }
 
     .about-ratio > img:first-child {
         height: 2vh;
-    }
-
-    .highlights {
-        height: 184vh;
     }
 
     .highlights-header > p {
@@ -402,84 +423,30 @@ hr {
     }
 }
 
-@media (max-width: 655px) {
-    .hero {
-        height: 60vh;
-    }
-    
-    .hero p {
-        font-size: 13px;
-    }
-
-    .hero p:first-child {
-        top: 18%;
-    }
-
-    .hero p:last-child {
-        top: 7%;
-    }
-
-    .learn-ratio {
-        width: 15vw;
-        height: 5vh;
-    }
-
-    .about-ratio {
-        margin-bottom: 30px;
-    }
-
-    .highlights {
-        height: 163vh;
-    }
-
-    .highlights-header > p {  
-        font-size: 7vh;
-    }
-
-    .projects-grid {
-        row-gap: 7vh;
-    }
-
-    .item {
-        height: 58vh;
-    }
-
-    .item-img-wrapper > img {
-        border-radius: 5px;
-    }
-
-    .project-name {
-        margin: 0vh;
-        font-size: 13px;
-    }
-    
-    .project-desc {
-        top: 64%;
-        font-size: 0.6rem;
-    }
-
-    .view-button {
-        width: 28%;
-        height: 5%;
-    }   
-}
-
-@media (max-width: 375px) {
+/*====================== MOBILE ======================*/
+@media (max-width: 376px) {
     .hero {
         height: 50vh;
     }
 
     .hero p {
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     .hero p:first-child {
-        top: 20%;
+        top: 3.2rem;
+        left: 23%;
     }
 
     .hero p:last-child {
-        top: 5%;
-        left: 40%;
+        top: 1rem;
+        left: 13%;
+    }
+
+    .hero img {
+        top: 10%;
+        left: 5%;
+        width: 90%;
     }
 
     .learn-ratio {
@@ -491,29 +458,37 @@ hr {
         width: 40%;
     }
 
-    .about-ratio {
-        border-top-right-radius: 60px;
+    .about img:nth-child(3) {
+        display: none;
     }
 
-    .about-ratio > img:first-child {
-        height: 7px;
+    .about-ratio {
+        border-top-right-radius: 60px;
+        margin: 0.5rem 0 2rem 0;
     }
 
     .introduction {
         margin: 2vh 0px 0px 2vw;
+        font-size: 1.3rem;
+    }
+
+    .learn-ratio {
+        width: 7rem;
+        height: 1.5rem;
+        margin: 0.5rem 0 1rem 1rem;
     }
 
     .highlights-header > p {  
-        font-size: 5vh;
+        font-size: 1.4rem;
     }
 
-    .highlights {
-        height: 270vh;
+    .highlights-header-img {
+        width: 100%;
     }
 
     .projects-grid {
         padding: 3% 0% 0% 0%;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         row-gap: 6vh;
     }
 
@@ -538,84 +513,6 @@ hr {
     }
 
     .view-button {
-        width: 40%;
-        height: 3%;
-    }   
-
-    .highlights > img:last-child {
-        width: 50vw;
-    }
-}
-
-@media (max-width: 320px) {
-    .hero p:first-child {
-        top: 22%;
-        left: 23%;
-    }
-
-    .hero p:last-child {
-        top: 2%;
-        left: 31%;
-    }
-
-    .hero img {
-        left: 5%;
-        width: 90%;
-    }
-
-    .learn-ratio {
-        margin-top: 2%;
-        width: 30vw;
-        height: 5vh;
-    }
-
-    .learn-btn-arrow-mask {
-        border-top-left-radius: 4vw;
-        border-bottom-left-radius: 4vw;
-    }
-
-    .about-ratio {
-        margin-bottom: 4vh;
-    }
-
-    .about-ratio > img:first-child {
-        width: 15px;
-    }
-
-    .highlights {
-        height: 505vh;
-    }
-
-    .highlights-header > p {  
-        font-size: 4vh;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .item {
-        border-radius: 12px;
-    }
-
-    .item-img-wrapper > img {
-        border-radius: 9px;
-    }
-
-    .project-name {
-        font-size: 20px;
-    }
-
-    .project-tools {
-        font-size: 3vh;
-    }
-
-    .project-desc {
-        font-size: 0.9rem;
-    }
-
-    .view-button {
         width: 50%;
-        height: 2%;
-    }
+    }   
 }
