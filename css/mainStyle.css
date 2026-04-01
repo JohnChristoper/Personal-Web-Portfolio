@@ -40,11 +40,6 @@ body {
     margin: 0;
     font-family: 'Raleway';
     background-color: var(--rangoongreen);
-    /*background-image: url('../Assets/Images/wickedbackground.svg');
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: repeat; */
 }
 
 header {

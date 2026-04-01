@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>John Christoper Web Portfolio</title>
+        <link rel="stylesheet" href="../css/projectCardStyle.css">
+        <link rel="stylesheet" href="../css/mainStyle.css">
+    </head>
+
+    <body>
+        <canvas id="starfield"></canvas>
+
+        <header>
+            <button class="back-btn" onclick="window.location.href='../projects.html'">
+                <div class="back-btn-mask"></div>
+                <img src="../Assets/Images/arrow2.png">
+                <p>Back to Projects</p>
+            </button>
+        </header>
+
+        <main>
+            <p class="cat">Networking</p>
+            <p class="project-name">House of Origami</p>
+            <div class="line"></div>
+
+            <div class="fade-gallery">
+                <img class="active" src="../Assets/Images/House_of_Origami_Website1.png">
+                <img src="../Assets/Images/House_of_Origami_Website2.png">
+                <img src="../Assets/Images/House_of_Origami_Website3.png">
+                <img src="../Assets/Images/House_of_Origami_Website4.png">
+            </div>
+
+            <div class="overview-ratio">
+                <p class="heading">OVERVIEW</p>
+                <div class="content-ratio">
+                    <p class="content">A multi-page educational platform designed to bring the ancient art of Japanese paper folding into the digital age. The project focuses on creating an intuitive user experience for hobbyists and master-level practitioners alike, blending cultural heritage with modern web design principles.</p>
+                </div>
+            </div>
+
+            <div class="overview-section2">
+                <div class="key-ratio">
+                    <p class="heading">KEY FEATURES</p>
+
+                    <div class="content-ratio">
+                        <ul class="content">
+                            <li><strong>Curated Learning Paths:</strong> 
+                                A structured "Masterclass" section featuring specialized lessons like the 
+                                Wiley Fox and Resting Lion, each with dedicated enrollment modules.</li>
+                            <li><br><strong>Interactive Lesson Layouts:</strong> 
+                                Detailed course pages (e.g., the Spear-tailed Dragon) that break down 
+                                complex processes into digestible video steps and provide resource 
+                                links for materials.</li>
+                            <li><br><strong>Responsive Contact System:</strong> 
+                                A functional "Send Us a Message" interface that categorizes users by 
+                                skill level and interest, ensuring personalized engagement.</li>
+                            <li><br><strong>Geographic Integration:</strong> 
+                                A visual headquarters section featuring embedded map data to ground 
+                                the brand in its Kyoto-based roots.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="learned-ratio">
+                    <p class="heading">WHAT I LEARNED</p>
+
+                    <div class="content-ratio">
+                        <ul class="content">
+                            <li><strong>Semantic HTML5 Structure:</strong> 
+                                I focused on writing clean, organized code. By using semantic tags, 
+                                I ensured the site isn't just visually appealing but also accessible 
+                                and easy to navigate for all users.</li>
+                            <li><br><strong>Form Logic & Layout:</strong> 
+                                Designing the "Send Us a Message" section taught me how to handle user 
+                                input layouts—balancing radio buttons, text fields, and checkboxes 
+                                within a clean, intuitive interface.</li>
+                            <li><br><strong>Responsive Contact System:</strong> 
+                                This project was a "Desktop First" mindset. I learned how to use 
+                                breakpoints to ensure that the complex Masterclass grid and the Lesson 
+                                details remain perfectly readable and functional on a desktop or a smartphone.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools-ratio">
+                <p class="heading">TOOLS USED</p>
+                <p class="tool">HTML</p>
+                <p class="tool">CSS</p>
+            </div>
+
+            <div class="link-ratio">
+                <p class="heading">LINK</p>
+                <p id="link" class="content"></p>
+            </div>
+
+            <div class="bottom-space"></div>
+        </main>
+
+        <script src="../script/parallaxBackgroundScript.js" defer></script>
+        <script src="../script/projectCardScript.js" defer></script>
+    </body>
+</html>
