@@ -11,6 +11,18 @@ body {
     flex-direction: column;
 }
 
+.back-btn-ratio {
+    display: flex;
+    align-self: flex-start;
+    position: fixed;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    background-color: var(--rangoongreen);
+    z-index: 10;
+}
+
 .back-btn {
     position: relative;
     display: flex;
@@ -19,7 +31,7 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     padding: 0 2rem;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 0 2rem;
     font-size: 1rem;
     color: var(--barleywhite);
     border: 1px solid var(--barleywhite);
@@ -65,7 +77,7 @@ main {
 }
 
 .cat {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
     font-size: 1.2rem;
     color: var(--accent);
 }
@@ -151,6 +163,8 @@ main {
 }
 
 .content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     letter-spacing: 0.07rem;
     margin: 0;
     padding: 0;
@@ -195,4 +209,51 @@ main {
 
 .bottom-space {
     height: 5rem;
+}
+
+/*===================  TABLET  ======================*/
+@media (max-width: 769px) {
+    main {
+        width: 90%;
+    }
+
+    .back-btn-ratio {
+        height: 4rem;
+    }
+
+    .back-btn {
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+
+    .overview-section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .tool {
+        padding: 0.2rem 1rem;
+        font-size: 0.6rem;
+        margin: 1.5rem 0.5rem 0 0;
+    }
+}
+
+/*===================  MOBILE  ======================*/
+@media (max-width: 376px) {
+    .back-btn {
+        margin: 1rem 0 0 1rem;
+    }
+
+    .fade-gallery,
+    .overview-ratio,
+    .overview-section2,
+    .tools-ratio,
+    .link-ratio {
+        width: 100%;
+    }
+
+    .content-ratio {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
 }

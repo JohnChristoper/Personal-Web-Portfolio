@@ -40,7 +40,7 @@ filter.forEach( btn => {
 
 document.querySelectorAll('.typewriter').forEach(el => {
     const text = el.textContent;
-    const speed = el.dataset.speed || 40; // ms per character, override with data-speed="30"
+    const speed = el.dataset.speed || 40;
     el.textContent = '';
 
     let i = 0;

@@ -21,3 +21,18 @@ if(p.textContent.trim() === ""){
 } else {
     div.style.display = "block";
 }
+
+document.querySelectorAll('.typewriter').forEach(el => {
+    const text = el.textContent;
+    const speed = el.dataset.speed || 50;
+    el.textContent = '';
+
+    let i = 0;
+    const type = () => {
+        if (i < text.length) {
+            el.textContent += text[i++];
+            setTimeout(type, speed);
+        }
+    };
+    type();
+});

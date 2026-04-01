@@ -5,10 +5,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>John Christoper Web Portfolio</title>
         <link rel="stylesheet" href="../css/projectCardStyle.css">
-        <link rel="stylesheet" href="css/mainStyle.css">
+        <link rel="stylesheet" href="../css/mainStyle.css">
     </head>
 
     <body>
         <canvas id="starfield"></canvas>
+
+        <div class="back-btn-ratio">
+            <button class="back-btn" onclick="window.location.href='../projects.html'">
+                <div class="back-btn-mask"></div>
+                <img src="../Assets/Images/arrow2.png">
+                <p>Back to Projects</p>
+            </button>
+        </div>
+
+        <main>
+            <p class="cat"></p> <!---->
+            <p class="project-name typewriter"></p><!---->
+            <div class="line"></div>
+
+            <div class="fade-gallery"> <!---->
+                <img class="active" src="../Assets/Images/">
+                <img src="../Assets/Images/">
+                <img src="../Assets/Images/">
+                <img src="../Assets/Images/">
+            </div>
+
+            <div class="overview-ratio">
+                <p class="heading">OVERVIEW</p>
+                <div class="content-ratio"><!---->
+                    <p class="content"></p>
+                </div>
+            </div>
+
+            <div class="overview-section2">
+                <div class="key-ratio">
+                    <p class="heading">KEY FEATURES</p>
+
+                    <div class="content-ratio">
+                        <ul class="content"><!---->
+                            <li><strong></strong> 
+                                </li>
+                            <li><br><strong></strong> 
+                                </li>
+                            <li><br><strong></strong> 
+                                </li>
+                            <li><br><strong></strong> 
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="learned-ratio">
+                    <p class="heading">WHAT I LEARNED</p>
+
+                    <div class="content-ratio">
+                        <ul class="content"><!---->
+                            <li><strong></strong> 
+                                </li>
+                            <li><br><strong></strong> 
+                                </li>
+                            <li><br><strong></strong> 
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tools-ratio">
+                <p class="heading">TOOLS USED</p><!---->
+                <p class="tool"></p>
+                <p class="tool"></p>
+            </div>
+
+            <div class="link-ratio">
+                <p class="heading">LINK</p><!---->
+                <p id="link" class="content"></p>
+            </div>
+
+            <div class="bottom-space"></div>
+        </main>
+
+        <script src="../script/parallaxBackgroundScript.js" defer></script>
+        <script src="../script/projectCardScript.js" defer></script>
     </body>
 </html>
