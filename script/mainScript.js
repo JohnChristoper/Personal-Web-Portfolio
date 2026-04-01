@@ -1,6 +1,6 @@
 window.addEventListener( 'resize', function() {
     if(this.window.innerWidth > 768) {
-        this.document.getElement('menu-toggle').checked = false;
+        document.getElementById('menu-toggle').checked = false;
     }
 });
 
@@ -52,8 +52,9 @@ document.querySelectorAll('.typewriter').forEach(el => {
     };
     type();
 });
+
 /* ===============================
-   ADVANCED INTERACTIVE STARFIELD
+    ADVANCED INTERACTIVE STARFIELD
 ================================ */
 
 const canvas = document.getElementById("starfield");
