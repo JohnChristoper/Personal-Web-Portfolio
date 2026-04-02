@@ -165,6 +165,7 @@ main {
 .content {
     word-wrap: break-word;
     overflow-wrap: break-word;
+    text-decoration: none;
     letter-spacing: 0.07rem;
     margin: 0;
     padding: 0;

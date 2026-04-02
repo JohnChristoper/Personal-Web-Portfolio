@@ -24,17 +24,15 @@
             <p class="project-name typewriter">DHCP Relay Simulation</p>
             <div class="line"></div>
 
-            <div class="fade-gallery"> <!---->
+            <div class="fade-gallery">
                 <img class="active" src="../Assets/Images/DHCP_Relay_Simulation.png">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
+                <img src="../Assets/Images/DHCP_Relay_Simulation2.png">
             </div>
 
             <div class="overview-ratio">
                 <p class="heading">OVERVIEW</p>
-                <div class="content-ratio"><!---->
-                    <p class="content"></p>
+                <div class="content-ratio">
+                    <p class="content">In this project, I engineered a complex network infrastructure using Cisco Packet Tracer to demonstrate the implementation of DHCP Relay Agents across a segmented enterprise environment. The core objective was to centralize IP address management on a single server while ensuring that multiple distinct local area networks (LANs)—each representing a different corporate department—could dynamically receive correct IP configurations across router boundaries.</p>
                 </div>
             </div>
 
@@ -43,15 +41,18 @@
                     <p class="heading">KEY FEATURES</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>Centralized DHCP Management:</strong> 
+                                Configured a dedicated DHCP Server with multiple address pools 
+                                (Admin, HR, Payroll, IT Dept) to serve unique subnets.</li>
+                            <li><br><strong>DHCP Relay Integration:</strong> 
+                                Successfully implemented ip helper-address configurations on router 
+                                interfaces to forward DHCP broadcast discovery packets to the 
+                                unicast address of the central server.</li>
+                            <li><br><strong>Routing Protocols:</strong> 
+                                Utilized serial connections (Se2/0, Se3/0) to establish the 
+                                wide-area network (WAN) backbone between the central hub and 
+                                departmental routers.</li>
                         </ul>
                     </div>
                 </div>
@@ -60,13 +61,20 @@
                     <p class="heading">WHAT I LEARNED</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>DHCP Relay Mechanics:</strong> 
+                                I gained a deep understanding of how DHCP broadcasts are limited 
+                                to a single broadcast domain and how to use Relay Agents 
+                                (IP Helper) to allow clients to reach a server on a completely 
+                                different network segment.</li>
+                            <li><br><strong>Network Troubleshooting:</strong> 
+                                This taught me how to diagnose connectivity issues between clients and 
+                                the server by verifying routing tables and ensuring that the relay 
+                                agent points to the correct server IP.</li>
+                            <li><br><strong>Scalable Infrastructure Design:</strong> 
+                                I learned how to build a network that is easy to scale. By centralizing 
+                                the DHCP server, adding a new department only requires a new pool and a 
+                                single command on the new gateway, rather than a whole new server.</li>
                         </ul>
                     </div>
                 </div>
