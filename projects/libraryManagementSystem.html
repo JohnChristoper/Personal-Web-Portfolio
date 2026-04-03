@@ -20,21 +20,25 @@
         </div>
 
         <main>
-            <p class="cat"></p> <!---->
-            <p class="project-name typewriter"></p><!---->
+            <p class="cat">Software Development</p>
+            <p class="project-name typewriter">Library Management System</p>
             <div class="line"></div>
 
-            <div class="fade-gallery"> <!---->
-                <img class="active" src="../Assets/Images/">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
+            <div class="fade-gallery">
+                <img class="active" src="../Assets/Images/Library_Management_System.png">
+                <img src="../Assets/Images/Library_Management_System2.png">
             </div>
 
             <div class="overview-ratio">
                 <p class="heading">OVERVIEW</p>
-                <div class="content-ratio"><!---->
-                    <p class="content"></p>
+                <div class="content-ratio">
+                    <p class="content">The Library Management System is a Java-based console 
+                        application designed to streamline the operations of a university library. 
+                        It features a robust back-end capable of managing user authentication, 
+                        book inventory, and borrowing transactions. The system is built with a clear 
+                        distinction between Admin and User roles, ensuring that sensitive tasks like 
+                        "Issuing Books" are restricted to authorized personnel while students can easily 
+                        browse and request resources.</p>
                 </div>
             </div>
 
@@ -43,15 +47,19 @@
                     <p class="heading">KEY FEATURES</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>Role-Based Access Control (RBAC):</strong> 
+                                Implemented a dual-interface system where Admins can issue books and manage 
+                                inventory, while regular users have access to borrowing, reserving, and 
+                                renewing functionalities.</li>
+                            <li><br><strong>Persistent Data Storage:</strong> 
+                                Integrated JSON-based storage for both user accounts and book catalogs, 
+                                ensuring that all data is saved and retrieved accurately across different 
+                                sessions.</li>
+                            <li><br><strong>Secure Authentication:</strong> 
+                                Built a login and registration that validates email formats and 
+                                requires password verification, including a "three-try" limit for security 
+                                during sensitive actions.</li>
                         </ul>
                     </div>
                 </div>
@@ -60,27 +68,37 @@
                     <p class="heading">WHAT I LEARNED</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>Data Persistence & JSON Manipulation:</strong> 
+                                This project was my first major dive into external data storage. 
+                                I learned how to map Java objects to JSON structures and how to 
+                                handle file writing exceptions to prevent data loss.</li>
+                            <li><br><strong>Logic Flow & Input Validation:</strong> 
+                                I sharpened my skills in "defensive programming." I learned how 
+                                to sanitize user inputs (like email trimming and integer validation) 
+                                to prevent the program from crashing when a user enters unexpected data.</li>
+                            <li><br><strong>State Management:</strong> 
+                                Managing the currentUser state across different menus taught me 
+                                how to keep track of who is logged in and what permissions they 
+                                should have at any given time.</li>
+                            <li><br><strong>Static Methods & Package Organization:</strong> 
+                                By utilizing static imports and organizing the project into a 
+                                cohesive package (library.management.system), I learned how to 
+                                build a scalable project structure that is easy to navigate.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="tools-ratio">
-                <p class="heading">TOOLS USED</p><!---->
-                <p class="tool"></p>
-                <p class="tool"></p>
+                <p class="heading">TOOLS USED</p>
+                <p class="tool">Java</p>
+                <p class="tool">JSON</p>
             </div>
 
             <div class="link-ratio">
-                <p class="heading">LINK</p><!---->
-                <p id="link" class="content"></p>
+                <p class="heading">LINK</p>
+                <p id="link" ><a class="content" target="_blank" rel="noopener noreferrer" href="https://github.com/JohnChristoper/LMS">https://github.com/JohnChristoper/LMS</a></p>
             </div>
 
             <div class="bottom-space"></div>

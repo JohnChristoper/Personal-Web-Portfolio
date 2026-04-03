@@ -20,21 +20,24 @@
         </div>
 
         <main>
-            <p class="cat"></p> <!---->
-            <p class="project-name typewriter"></p><!---->
+            <p class="cat">Software Development</p>
+            <p class="project-name typewriter">Java Pacman Game</p>
             <div class="line"></div>
 
-            <div class="fade-gallery"> <!---->
-                <img class="active" src="../Assets/Images/">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
-                <img src="../Assets/Images/">
+            <div class="fade-gallery">
+                <img class="active" src="../Assets/Images/Java_Pacman.png">
+                <img src="../Assets/Images/Java_Pacman2.png">
             </div>
 
             <div class="overview-ratio">
                 <p class="heading">OVERVIEW</p>
-                <div class="content-ratio"><!---->
-                    <p class="content"></p>
+                <div class="content-ratio">
+                    <p class="content">For this project, I developed a custom 2D game engine 
+                        to recreate the classic Pac-Man experience. Instead of using a 
+                        dedicated game engine, I built the entire system using the Java Swing 
+                        and AWT libraries. The project focuses on real-time game loop management, 
+                        collision detection algorithms, and dynamic sprite rendering to create 
+                        a smooth, responsive arcade experience.</p>
                 </div>
             </div>
 
@@ -43,15 +46,22 @@
                     <p class="heading">KEY FEATURES</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>Dynamic Tile Mapping:</strong> 
+                                Implemented a string-based tileMap system that allows for 
+                                easy level design and layout modifications by translating characters 
+                                into game blocks (Walls, Food, Ghosts, and Pac-Man).</li>
+                            <li><br><strong>Collision Detection System:</strong> 
+                                Developed a custom collision() method to handle AABB (Axis-Aligned 
+                                Bounding Box) logic, preventing entities from passing through walls 
+                                and managing interactions between Pac-Man, food, and ghosts.</li>
+                            <li><br><strong>Automated Ghost AI:</strong> 
+                                Integrated a randomized movement system for the four distinct ghosts 
+                                (Blinky, Pinky, Inky, and Clyde), ensuring they navigate the maze 
+                                independently without overlapping with wall tiles.</li>
+                            <li><br><strong>Input Handling:</strong> 
+                                Implemented a KeyListener to capture real-time user input, allowing 
+                                for directional changes and game resets upon a "Game Over" state.</li>
                         </ul>
                     </div>
                 </div>
@@ -60,27 +70,33 @@
                     <p class="heading">WHAT I LEARNED</p>
 
                     <div class="content-ratio">
-                        <ul class="content"><!---->
-                            <li><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
-                            <li><br><strong></strong> 
-                                </li>
+                        <ul class="content">
+                            <li><strong>Object-Oriented Design (OOP):</strong> 
+                                This project was a deep dive into class structures. I learned 
+                                how to use inner classes (like Block) to encapsulate data for 
+                                game entities, making the code more modular and easier to manage.</li>
+                            <li><br><strong>Event-Driven Programming:</strong> 
+                                Working with ActionListener and KeyListener sharpened my 
+                                understanding of how software handles asynchronous user actions 
+                                while maintaining a steady internal logic flow.</li>
+                            <li><br><strong>Debugging Real-Time Systems:</strong> 
+                                Diagnosing logic errors in a running game loop taught me how to 
+                                effectively track state changes, such as why a ghost might stop 
+                                moving or why collision isn't triggering correctly on specific frames.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="tools-ratio">
-                <p class="heading">TOOLS USED</p><!---->
+                <p class="heading">TOOLS USED</p>
                 <p class="tool">Java</p>
                 <p class="tool">Swing</p>
             </div>
 
             <div class="link-ratio">
                 <p class="heading">LINK</p>
-                <p id="link" ><a class="content" href="https://github.com/JohnChristoper/pacman-game">https://github.com/JohnChristoper/pacman-game</a></p>
+                <p id="link" ><a class="content" target="_blank" rel="noopener noreferrer" href="https://github.com/JohnChristoper/pacman-game">https://github.com/JohnChristoper/pacman-game</a></p>
             </div>
 
             <div class="bottom-space"></div>
