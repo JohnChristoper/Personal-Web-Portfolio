@@ -13,18 +13,9 @@ function showNextImage(){
 
 setInterval(showNextImage, 3000);
 
-const p = document.getElementById("link");
-const div = p.parentElement;
-
-if(p.textContent.trim() === ""){
-    div.style.display = "none";
-} else {
-    div.style.display = "block";
-}
-
 document.querySelectorAll('.typewriter').forEach(el => {
     const text = el.textContent;
-    const speed = el.dataset.speed || 50;
+    const speed = el.dataset.speed || 20;
     el.textContent = '';
 
     let i = 0;

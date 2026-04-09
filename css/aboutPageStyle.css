@@ -26,6 +26,19 @@ main {
     align-self: center;
 }
 
+.profile-pic-ratio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic-ratio img {
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+    border: solid 3px var(--rangoongreen);
+}
+
 .name {
     line-height: 1;
     margin: 0;
@@ -209,8 +222,8 @@ main {
 .cert-container {
     align-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 75%;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
     column-gap: 4%;
 }
 
@@ -300,7 +313,7 @@ main {
     display: flex;
     box-sizing: border-box;
     width: auto;
-    height: 2.3rem;
+    height: 2.1rem;
     margin: 3% 5% 0 0;
     border-radius: 20px;
     border: solid var(--barleywhite) 1px;
@@ -311,6 +324,17 @@ main {
 .hobbies > div > p{
     margin: 0.4rem 1rem;
     color: var(--barleywhite);
+}
+
+.tools > div:hover,
+.hobbies > div:hover {
+    transition: background-color 0.5s ease;
+    background-color: var(--barleywhite);
+}
+
+.tools > div > p:hover, 
+.hobbies > div > p:hover {
+    color: var(--rangoongreen);
 }
 
 .photo-ratio img {
@@ -391,6 +415,10 @@ main {
 
 /*============  TABLET  ==================*/
 @media (max-width: 768px) {
+    .profile-pic-ratio img {
+        width: 10rem;
+    }
+
     .name {
         font-size: 3rem;
     }
@@ -500,8 +528,8 @@ main {
 /*============  MOBILE  ==================*/
 @media (max-width: 376px) {
     .profile-ratio {
+        margin-top: 1rem;
         grid-template-columns: 1fr;
-
     }
 
     .qoute {
@@ -589,4 +617,3 @@ main {
         width: 70%;
     }
 }
-

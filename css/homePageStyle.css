@@ -44,6 +44,38 @@ main {
     width: 60%;
 }
 
+.demo-reel-ratio {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.demo-reel-header {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 92%;
+}
+
+.demo-reel-header p {
+    color: var(--barleywhite);
+    font-size: 2rem ;
+    font-family: 'DM Serif Display';
+}
+
+.demo-reel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-reel-video {
+    width: 65%;
+    height: 29rem;
+}
+
 .about {
     display: flex;
     flex-direction: column;
@@ -200,7 +232,7 @@ hr {
     height: 12rem;
 }
 
-.item-img-wrapper > img {
+.item-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
